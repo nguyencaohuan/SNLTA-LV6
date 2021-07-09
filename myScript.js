@@ -1,3 +1,3 @@
 function myFunction() {
-  document.getElementById("demo").innerHTML = "Paragraph changed.";
+  document.getElementById("demo").innerHTML = "Văn bản đã bị thay đổi.";
 }
