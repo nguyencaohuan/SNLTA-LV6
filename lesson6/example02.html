@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Operators</h2>
+<h3>Ứng dụng phép chia lấy dư, kiểm tra số chia hết</h3>
+
+Số chia : <input type="text" id="sochia"><br><br>
+Số bị chia : <input type="text" id="sobichia"><br><br>
+Số dư : <span id="sodu"></span><br><br>
+Số dư -- : <span id="sodutru1"></span><br><br>
+Số dư ++ : <span id="soducong1"></span><br><br>
+
+<button type="button" onclick="tinh()">Tính</button>
+
+<script>
+function tinh(){
+	let a = document.getElementById("sochia").value;
+	let b = document.getElementById("sobichia").value;
+    let sodu = a % b
+    let sodutru1 = sodu;
+    sodutru1 --;
+    let soducong1 = sodu;
+    soducong1 ++;
+	document.getElementById("sodu").innerHTML = sodu;
+    document.getElementById("sodutru1").innerHTML = sodutru1;
+    document.getElementById("soducong1").innerHTML = soducong1;
+}
+</script>
+
+</body>
+</html>
