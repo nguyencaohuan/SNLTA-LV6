@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Hộp thoại nhắc nhở từ hệ thống</h2>
+<p>Click vào nút nhấn để hiển thị hộp nhắc nhở.</p>
+<button onclick="myFunction()">Mở hộp nhắc nhở</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var person = prompt("Xin nhập lại tên ", "Teky");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Xin chào " + person + "! Hôm nay bạn có vui không?";
+  }
+}
+</script>
+
+</body>
+</html>
